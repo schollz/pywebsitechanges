@@ -203,7 +203,7 @@ def send_email(smtpemail, smtppass, to, subject, body, imgname):
 @click.option("--to", help="email address of person to alert")
 @click.option("--smtpemail", default="", help="SMTP email address")
 @click.option("--smtppass", default="", help="SMTP email password")
-@click.option("--threshold", default=0.999, help="threshold for sending email")
+@click.option("--threshold", default=1.0, help="threshold for sending email")
 def run(folder, url, css, to, smtpemail, smtppass, threshold):
     logger.debug("changing dir to {}", folder)
     os.chdir(folder)
