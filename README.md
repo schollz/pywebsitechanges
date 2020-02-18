@@ -48,6 +48,8 @@ This will automatically download puppeteer, which is used to gather the screensh
 
 Every alert will send you an image of the latest image, in low quality JPEG format in order to save on bandwidth.
 
+Each time the script will only run once, so you will need to set up a cron job or a for loop to keep it continually running.
+
 ## License
 
 MIT
