@@ -62,7 +62,7 @@ for (var i = 0; i < hostFile.length; i++) {
     page.setViewport({ width: 1000, height: 1000, deviceScaleFactor: 1 });
 
     await page.goto(process.argv[2], { waitUntil: 'networkidle2' });
-    await page.waitFor(5000);
+    await page.waitForTimeout(5000);
 
     if (process.argv[4] == 'full') {
         await page.screenshot({
