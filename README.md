@@ -10,7 +10,7 @@ First install Node and Python on your system if you don't already. Then you will
 
 Then get the script:
 
-	wget https://raw.githubusercontent.com/schollz/websitechanges/master/websitechanges.py
+	wget https://raw.githubusercontent.com/schollz/pywebsitechanges/master/websitechanges.py
 
 And now run it whever - in a folder, in a cron, etc.
 
@@ -49,6 +49,9 @@ This will automatically download puppeteer, which is used to gather the screensh
 Every alert will send you an image of the latest image, in low quality JPEG format in order to save on bandwidth.
 
 Each time the script will only run once, so you will need to set up a cron job or a for loop to keep it continually running.
+
+## Note
+Go to https://github.com/puppeteer/puppeteer/blob/main/docs/troubleshooting.md if there are puppeteer/chrome not launching problems.
 
 ## License
 
